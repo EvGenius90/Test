@@ -12,7 +12,7 @@ let mCont = document.querySelector('.main_content')
 let block = document.querySelector('.block')
 
 document.querySelector('.addy').addEventListener('click', function(){
-    let a = document.createElement('block')
-    a.append('good')
-    mCont.append(a)
+    mCont.insertAdjacentHTML('beforeend', `
+    <div class="block">good job</div>
+    `)
 })
